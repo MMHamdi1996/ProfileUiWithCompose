@@ -20,6 +20,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.dp
@@ -74,8 +75,29 @@ class MainActivity : ComponentActivity() {
                             end.linkTo(parent.end)
                         }
                 )
-
+                Image(painterResource(id = R.drawable.back), null, Modifier
+                    .constrainAs(back) {
+                        top.linkTo(parent.top, margin = 24.dp)
+                        start.linkTo(parent.start, margin = 24.dp)
+                    })
+                Image(painterResource(id = R.drawable.write), null, Modifier
+                    .constrainAs(pen) {
+                        top.linkTo(profile.top)
+                        start.linkTo(profile.end)
+                    })
             }
+            Text(
+                text = "Mahdi Hamdi",
+                fontSize = 26.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color(android.graphics.Color.parseColor("#32357a"))
+            )
+
+            Text(
+                text = "Hamdimohammadmahdi@gmail.com",
+                fontSize = 15.sp,
+                color = Color(android.graphics.Color.parseColor("#747679"))
+            )
 
         }
     }
