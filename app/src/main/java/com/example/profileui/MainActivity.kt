@@ -5,11 +5,16 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -98,6 +103,204 @@ class MainActivity : ComponentActivity() {
                 fontSize = 15.sp,
                 color = Color(android.graphics.Color.parseColor("#747679"))
             )
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 32.dp, end = 32.dp, top = 32.dp, bottom = 10.dp)
+                    .height(55.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.btn_1),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .padding(end = 5.dp)
+                        .clickable { }
+                )
+
+                Text(
+                    text = "notification",
+                    color = Color.Black,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier
+                        .padding(start = 16.dp)
+                        .weight(1f)
+                )
+
+                Image(
+                    painter = painterResource(id = R.drawable.arrow),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .padding(end = 5.dp)
+                        .clickable { }
+                )
+            }
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
+                    .height(55.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.btn_2),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .padding(end = 5.dp)
+                        .clickable { }
+                )
+
+                Text(
+                    text = "calendar",
+                    color = Color.Black,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier
+                        .padding(start = 16.dp)
+                        .weight(1f)
+                )
+
+                Image(
+                    painter = painterResource(id = R.drawable.arrow),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .padding(end = 5.dp)
+                        .clickable { }
+                )
+            }
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
+                    .height(55.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.btn_3),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .padding(end = 5.dp)
+                        .clickable { }
+                )
+
+                Text(
+                    text = "Camera",
+                    color = Color.Black,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier
+                        .padding(start = 16.dp)
+                        .weight(1f)
+                )
+
+                Image(
+                    painter = painterResource(id = R.drawable.arrow),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .padding(end = 5.dp)
+                        .clickable { }
+                )
+            }
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
+                    .height(55.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.btn_4),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .padding(end = 5.dp)
+                        .clickable { }
+                )
+
+                Text(
+                    text = "note",
+                    color = Color.Black,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier
+                        .padding(start = 16.dp)
+                        .weight(1f)
+                )
+
+                Image(
+                    painter = painterResource(id = R.drawable.arrow),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .padding(end = 5.dp)
+                        .clickable { }
+                )
+            }
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
+                    .height(55.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.btn_5),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .padding(end = 5.dp)
+                        .clickable { }
+                )
+
+                Text(
+                    text = "share",
+                    color = Color.Black,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier
+                        .padding(start = 16.dp)
+                        .weight(1f)
+                )
+
+                Image(
+                    painter = painterResource(id = R.drawable.arrow),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .padding(end = 5.dp)
+                        .clickable { }
+                )
+            }
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
+                    .height(55.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.btn_6),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .padding(end = 5.dp)
+                        .clickable { }
+                )
+
+                Text(
+                    text = "duplication",
+                    color = Color.Black,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier
+                        .padding(start = 16.dp)
+                        .weight(1f)
+                )
+
+                Image(
+                    painter = painterResource(id = R.drawable.arrow),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .padding(end = 5.dp)
+                        .clickable { }
+                )
+            }
 
         }
     }
